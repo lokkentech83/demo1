@@ -1,0 +1,79 @@
+<html lang="ko"
+	xmlns:th="http://www.thymeleaf.org"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/common.css}" rel="stylesheet" />
+    <script th:src="@{/js/common.js}"></script> 
+
+    <title>Document</title>
+</head>
+<body onload="test1();">
+    <h1>mainPage</h1>
+    <p th:text="${name}"></p>
+    <p th:text="${now}"></p>
+
+    <h2>TODO</h2>
+    <table>
+        <tr>
+            <th>No</th>
+            <th style="width: 200px;">해야할 것</th>
+            <th style="width: 400px;">상세</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>공룡게임 보강</td>
+            <td>1. 점프속도조절 / 2. 점수 / 3.시작메뉴 / 4.종료시 메시지 / 5. 적 종류 추가 / 6. 배경 이미지 / ....</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>게시판 만들기</td>
+            <td>스프링 베이스로 만들어두기</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>깃헙에 올려두기</td>
+            <td>조금씩 고쳐나가면서 관리하는걸로 하고 깃헙에서 관리해두기</td>
+        </tr>
+    </table>
+    
+    <h2>링크</h2>
+    <table>
+        <tr>
+            <th>
+                No.
+            </th>
+            <th>
+                title
+            </th>
+            <th>
+                link
+            </th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>크롬 오프라인 공룡게임</td>
+            <td><button onclick="window.location.href='\pg001';">링크</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>게시판</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>TODO LIST</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>자바 디자인 패턴</td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
